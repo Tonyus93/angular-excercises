@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExercisesListComponent } from './components/exercises-list/exercises-list.component';
+import { ExercisesListModule } from './components/exercises-list/exercises-list.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExercisesListComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    ExercisesListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

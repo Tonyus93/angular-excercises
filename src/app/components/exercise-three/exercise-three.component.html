@@ -1,0 +1,5 @@
+<div class="joke">
+    <h4>Chuck Norris Joke:</h4>
+    <p>{{ (networkService.networkData | async)?.value }}</p>
+    <button (click)="networkService.getData()">Generate new joke</button>
+</div>
