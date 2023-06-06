@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./exercise-two.component.sass']
 })
 export class ExerciseTwoComponent {
-
+  value!: string;
 }

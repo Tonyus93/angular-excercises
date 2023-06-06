@@ -13,4 +13,4 @@ import { ParentComponentComponent } from './parent-component/parent-component.co
     ChildComponentComponent,
   ]
 })
-export class ExerciseTwoModule { }
+export class ExerciseFourModule { }
