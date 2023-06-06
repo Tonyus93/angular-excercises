@@ -10,7 +10,7 @@ import { ExercisesListModule } from './components/exercises-list/exercises-list.
 @NgModule({
   declarations: [
     AppComponent,
-    ExercisesListComponent
+    ExercisesListComponent,
   ],
   imports: [
     AppRoutingModule,
