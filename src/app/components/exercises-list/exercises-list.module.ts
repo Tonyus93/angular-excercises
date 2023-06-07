@@ -6,22 +6,27 @@ import { ExerciseThreeComponent } from '../exercise-three/exercise-three.compone
 import { ExerciseFourModule } from '../exercise-four/exercise-four.module';
 import { ExerciseFourComponent } from '../exercise-four/exercise-four.component';
 import { FormsModule } from '@angular/forms';
+import { ExerciseFiveComponent } from '../exercise-five/exercise-five.component';
+import { ExerciseFiveModule } from '../exercise-five/exercise-five.module';
 
 @NgModule({
   declarations: [
     ExerciseTwoComponent,
     ExerciseThreeComponent,
-    ExerciseFourComponent
+    ExerciseFourComponent,
+    ExerciseFiveComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ExerciseFourModule,
+    ExerciseFiveModule,
   ],
   exports: [
     ExerciseTwoComponent,
     ExerciseThreeComponent,
-    ExerciseFourComponent
+    ExerciseFourComponent,
+    ExerciseFiveComponent
   ]
 })
 export class ExercisesListModule { }
