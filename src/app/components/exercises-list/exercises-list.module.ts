@@ -12,6 +12,9 @@ import { ExerciseSixComponent } from '../exercise-six/exercise-six.component';
 import { ExerciseSevenComponent } from '../exercise-seven/exercise-seven.component';
 import { ExerciseEightComponent } from '../exercise-eight/exercise-eight.component';
 import { ExerciseEightModule } from '../exercise-eight/exercise-eight.module';
+import { ExerciseNineComponent } from '../exercise-nine/exercise-nine.component';
+import { ExerciseNineModule } from '../exercise-nine/exercise-nine.module';
+import { ExerciseNineRoutingModule } from '../exercise-nine/exercise-nine-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,21 +25,15 @@ import { ExerciseEightModule } from '../exercise-eight/exercise-eight.module';
     ExerciseSixComponent,
     ExerciseSevenComponent,
     ExerciseEightComponent,
+    ExerciseNineComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ExerciseFourModule,
     ExerciseFiveModule,
-    ExerciseEightModule
+    ExerciseEightModule,
+    ExerciseNineModule
   ],
-  exports: [
-    ExerciseTwoComponent,
-    ExerciseThreeComponent,
-    ExerciseFourComponent,
-    ExerciseFiveComponent,
-    ExerciseSixComponent,
-    ExerciseSevenComponent,
-  ]
 })
 export class ExercisesListModule { }
