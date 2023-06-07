@@ -10,6 +10,8 @@ import { ExerciseFiveComponent } from '../exercise-five/exercise-five.component'
 import { ExerciseFiveModule } from '../exercise-five/exercise-five.module';
 import { ExerciseSixComponent } from '../exercise-six/exercise-six.component';
 import { ExerciseSevenComponent } from '../exercise-seven/exercise-seven.component';
+import { ExerciseEightComponent } from '../exercise-eight/exercise-eight.component';
+import { ExerciseEightModule } from '../exercise-eight/exercise-eight.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ExerciseSevenComponent } from '../exercise-seven/exercise-seven.compone
     ExerciseFiveComponent,
     ExerciseSixComponent,
     ExerciseSevenComponent,
+    ExerciseEightComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ExerciseFourModule,
     ExerciseFiveModule,
+    ExerciseEightModule
   ],
   exports: [
     ExerciseTwoComponent,
