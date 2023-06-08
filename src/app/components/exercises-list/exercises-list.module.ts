@@ -14,7 +14,8 @@ import { ExerciseEightComponent } from '../exercise-eight/exercise-eight.compone
 import { ExerciseEightModule } from '../exercise-eight/exercise-eight.module';
 import { ExerciseNineComponent } from '../exercise-nine/exercise-nine.component';
 import { ExerciseNineModule } from '../exercise-nine/exercise-nine.module';
-import { ExerciseNineRoutingModule } from '../exercise-nine/exercise-nine-routing.module';
+import { ExerciseTenComponent } from '../exercise-ten/exercise-ten.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,10 @@ import { ExerciseNineRoutingModule } from '../exercise-nine/exercise-nine-routin
     ExerciseSevenComponent,
     ExerciseEightComponent,
     ExerciseNineComponent,
+    ExerciseTenComponent,
   ],
   imports: [
+    BrowserModule, 
     CommonModule,
     FormsModule,
     ExerciseFourModule,
