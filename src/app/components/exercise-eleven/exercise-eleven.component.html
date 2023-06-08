@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-name">
+        <label for="name">Name: </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    
+    <div class="form-age">
+        <label for="age">Age: </label>
+        <input id="age" type="text" formControlName="age">
+    </div>
+
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>
+
+<p>Result:</p>
+<p>Name: {{ nameValue }}</p>
+<p>Age: {{ ageValue }}</p>
