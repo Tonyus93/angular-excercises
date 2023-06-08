@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ExerciseTwoComponent } from '../exercise-two/exercise-two.component';
 import { ExerciseThreeComponent } from '../exercise-three/exercise-three.component';
@@ -16,6 +16,7 @@ import { ExerciseNineComponent } from '../exercise-nine/exercise-nine.component'
 import { ExerciseNineModule } from '../exercise-nine/exercise-nine.module';
 import { ExerciseTenComponent } from '../exercise-ten/exercise-ten.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ExerciseElevenComponent } from '../exercise-eleven/exercise-eleven.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,13 @@ import { BrowserModule } from '@angular/platform-browser';
     ExerciseEightComponent,
     ExerciseNineComponent,
     ExerciseTenComponent,
+    ExerciseElevenComponent,
   ],
   imports: [
     BrowserModule, 
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     ExerciseFourModule,
     ExerciseFiveModule,
     ExerciseEightModule,
