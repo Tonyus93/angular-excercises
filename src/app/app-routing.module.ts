@@ -10,6 +10,7 @@ import { ExerciseSixComponent } from './components/exercise-six/exercise-six.com
 import { ExerciseSevenComponent } from './components/exercise-seven/exercise-seven.component';
 import { ExerciseEightComponent } from './components/exercise-eight/exercise-eight.component';
 import { ExerciseNineComponent } from './components/exercise-nine/exercise-nine.component';
+import { ExerciseTenComponent } from './components/exercise-ten/exercise-ten.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'exercise-7', component: ExerciseSevenComponent },
   { path: 'exercise-8', component: ExerciseEightComponent },
   { path: 'exercise-9', component: ExerciseNineComponent },
+  { path: 'exercise-10', component: ExerciseTenComponent },
 ];
 
 @NgModule({

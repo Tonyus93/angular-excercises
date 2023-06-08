@@ -1,0 +1,9 @@
+<ng-template #template>
+    <ng-container *ngIf="displayTemplate">
+        <p>Template displayed!</p>
+    </ng-container>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="template"></ng-container>
+
+<button (click)="toggleDisplayTemplate()">Toggle display</button>
