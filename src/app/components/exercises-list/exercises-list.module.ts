@@ -1,50 +1,37 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
-import { ExerciseTwoComponent } from '../exercise-two/exercise-two.component';
-import { ExerciseThreeComponent } from '../exercise-three/exercise-three.component';
+import { ExercisesListComponent } from './exercises-list.component';
+import { ExerciseTwoModule } from '../exercise-two/exercise-two.module';
+import { ExerciseThreeModule } from '../exercise-three/exercise-three.module';
 import { ExerciseFourModule } from '../exercise-four/exercise-four.module';
-import { ExerciseFourComponent } from '../exercise-four/exercise-four.component';
-import { ExerciseFiveComponent } from '../exercise-five/exercise-five.component';
 import { ExerciseFiveModule } from '../exercise-five/exercise-five.module';
-import { ExerciseSixComponent } from '../exercise-six/exercise-six.component';
-import { ExerciseSevenComponent } from '../exercise-seven/exercise-seven.component';
-import { ExerciseEightComponent } from '../exercise-eight/exercise-eight.component';
+import { ExerciseSixModule } from '../exercise-six/exercise-six.module';
+import { ExerciseSevenModule } from '../exercise-seven/exercise-seven.module';
 import { ExerciseEightModule } from '../exercise-eight/exercise-eight.module';
-import { ExerciseNineComponent } from '../exercise-nine/exercise-nine.component';
 import { ExerciseNineModule } from '../exercise-nine/exercise-nine.module';
-import { ExerciseTenComponent } from '../exercise-ten/exercise-ten.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { ExerciseElevenComponent } from '../exercise-eleven/exercise-eleven.component';
-import { ExerciseTwelveComponent } from '../exercise-twelve/exercise-twelve.component';
-import { UppercaseSymbolPipe } from '../exercise-thirteen/pipes/uppercase-symbol.pipe';
-import { ExerciseThirteenComponent } from '../exercise-thirteen/exercise-thirteen.component';
+import { ExerciseTenModule } from '../exercise-ten/exercise-ten.module';
+import { ExerciseElevenModule } from '../exercise-eleven/exercise-eleven.module';
+import { ExerciseTwelveModule } from '../exercise-twelve/exercise-twelve.module';
 import { ExerciseThirteenModule } from '../exercise-thirteen/exercise-thirteen.module';
 
 @NgModule({
   declarations: [
-    ExerciseTwoComponent,
-    ExerciseThreeComponent,
-    ExerciseFourComponent,
-    ExerciseFiveComponent,
-    ExerciseSixComponent,
-    ExerciseSevenComponent,
-    ExerciseEightComponent,
-    ExerciseNineComponent,
-    ExerciseTenComponent,
-    ExerciseElevenComponent,
-    ExerciseTwelveComponent,
+    ExercisesListComponent
   ],
   imports: [
-    BrowserModule, 
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
+    RouterModule,
+    ExerciseTwoModule,
+    ExerciseThreeModule,
     ExerciseFourModule,
     ExerciseFiveModule,
+    ExerciseSixModule,
+    ExerciseSevenModule,
     ExerciseEightModule,
     ExerciseNineModule,
+    ExerciseTenModule,
+    ExerciseElevenModule,
+    ExerciseTwelveModule,
     ExerciseThirteenModule
   ],
 })
