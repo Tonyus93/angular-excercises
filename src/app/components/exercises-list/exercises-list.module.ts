@@ -17,6 +17,7 @@ import { ExerciseNineModule } from '../exercise-nine/exercise-nine.module';
 import { ExerciseTenComponent } from '../exercise-ten/exercise-ten.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ExerciseElevenComponent } from '../exercise-eleven/exercise-eleven.component';
+import { ExerciseTwelveComponent } from '../exercise-twelve/exercise-twelve.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ExerciseElevenComponent } from '../exercise-eleven/exercise-eleven.comp
     ExerciseNineComponent,
     ExerciseTenComponent,
     ExerciseElevenComponent,
+    ExerciseTwelveComponent,
   ],
   imports: [
     BrowserModule, 
