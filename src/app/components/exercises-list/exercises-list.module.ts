@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
+import { ExercisesListComponent } from './exercises-list.component';
 import { ExerciseTwoModule } from '../exercise-two/exercise-two.module';
 import { ExerciseThreeModule } from '../exercise-three/exercise-three.module';
 import { ExerciseFourModule } from '../exercise-four/exercise-four.module';
@@ -15,8 +16,11 @@ import { ExerciseTwelveModule } from '../exercise-twelve/exercise-twelve.module'
 import { ExerciseThirteenModule } from '../exercise-thirteen/exercise-thirteen.module';
 
 @NgModule({
+  declarations: [
+    ExercisesListComponent
+  ],
   imports: [
-    BrowserModule,
+    RouterModule,
     ExerciseTwoModule,
     ExerciseThreeModule,
     ExerciseFourModule,
