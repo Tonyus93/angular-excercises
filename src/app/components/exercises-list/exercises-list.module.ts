@@ -18,6 +18,9 @@ import { ExerciseTenComponent } from '../exercise-ten/exercise-ten.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ExerciseElevenComponent } from '../exercise-eleven/exercise-eleven.component';
 import { ExerciseTwelveComponent } from '../exercise-twelve/exercise-twelve.component';
+import { UppercaseSymbolPipe } from '../exercise-thirteen/pipes/uppercase-symbol.pipe';
+import { ExerciseThirteenComponent } from '../exercise-thirteen/exercise-thirteen.component';
+import { ExerciseThirteenModule } from '../exercise-thirteen/exercise-thirteen.module';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import { ExerciseTwelveComponent } from '../exercise-twelve/exercise-twelve.comp
     ExerciseFourModule,
     ExerciseFiveModule,
     ExerciseEightModule,
-    ExerciseNineModule
+    ExerciseNineModule,
+    ExerciseThirteenModule
   ],
 })
 export class ExercisesListModule { }
