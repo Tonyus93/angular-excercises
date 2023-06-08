@@ -1,0 +1,7 @@
+<ng-container [ngSwitch]="value">
+    <p *ngSwitchCase="'Value1'">Displaying Value1</p>
+    <p *ngSwitchCase="'Value2'">Displaying Value2</p>
+    <p *ngSwitchDefault>Displaying Default Value</p>
+</ng-container>
+
+<input type="text" [(ngModel)]="value" />

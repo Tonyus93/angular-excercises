@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExercisesListComponent } from './components/exercises-list/exercises-list.component';
 import { ExercisesListModule } from './components/exercises-list/exercises-list.module';
-import { ExerciseElevenComponent } from './components/exercise-eleven/exercise-eleven.component';
 
 @NgModule({
   declarations: [
