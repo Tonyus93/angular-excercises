@@ -1,0 +1,8 @@
+<ul>
+    <li>
+        <p>This link is only allowed if user is logged in: <a [routerLink]="'/exercise-14/route-1'">Link</a></p>
+    </li>
+</ul>
+
+<p>Current user status: {{ authService.isLoggedIn }}</p>
+<button (click)="authService.toggleUserAuth()">Toggle User Auth State</button>
