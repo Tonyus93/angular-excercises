@@ -1,2 +1,8 @@
-<h1>My Exercises</h1>
-<router-outlet></router-outlet>
+<app-header></app-header>
+<app-drawer *ngIf="screenDetectorService.isMobile"></app-drawer>
+<router-outlet *ngIf="screenDetectorService.isMobile == false"></router-outlet>
+<footer>
+    <div>
+        <p>Tony Montaña @ 2023</p>
+    </div>
+</footer>

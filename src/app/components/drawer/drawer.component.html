@@ -1,0 +1,9 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-nav-list>
+            <a mat-list-item [routerLink]="'/home'" routerLinkActive="active">Home</a>
+            <a mat-list-item [routerLink]="'/exercise-list'" routerLinkActive="active">Exercises</a>
+        </mat-nav-list>
+    </mat-drawer>
+    <router-outlet></router-outlet>
+</mat-drawer-container>

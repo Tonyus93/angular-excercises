@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ExerciseTwoComponent {
   value!: string;
+
+  clearValue() {
+    this.value = '';
+  }
 }

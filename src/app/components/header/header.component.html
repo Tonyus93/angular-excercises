@@ -1,0 +1,24 @@
+<header>
+    <mat-toolbar [ngClass]="'main-toolbar'" color="primary">
+        <ng-template [ngIf]="screenDetectorService.isMobile == false" [ngIfElse]="mobileSidebar">
+            <div class="logo">
+                <span class="title">Angular Exercises</span>
+            </div>
+            <div class="nav-links">
+                <a mat-button [routerLink]="'/home'" routerLinkActive="active">Home</a>
+                <a mat-button [routerLink]="'/exercise-list'" routerLinkActive="active">Exercises</a>
+            </div>
+        </ng-template>
+    </mat-toolbar>
+</header>
+
+<ng-template #mobileSidebar>
+    <div class="menu">
+        <button mat-icon-button (click)="drawerService.toggleDrawer()">
+            <mat-icon>{{drawerService.isOpen ? 'close' : 'menu'}}</mat-icon>
+        </button>
+    </div>
+    <div class="logo">
+        <span class="title">Angular Exercises</span>
+    </div>
+</ng-template>

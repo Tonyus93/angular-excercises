@@ -1,3 +1,5 @@
 <ng-template [ngIf]="display == true" *ngFor="let item of items">
-    {{ item }}
+    <mat-list>
+        <p mat-list-item>{{ item }}</p>
+    </mat-list>
 </ng-template>
