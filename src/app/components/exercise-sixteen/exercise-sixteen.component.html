@@ -1,0 +1,7 @@
+<h2>Nolan's films typeahead</h2>
+<mat-form-field>
+    <input #input [matAutocomplete]="auto" matInput type="text" placeholder="Type a Nolan film..." />
+    <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let film of filmListObs$ | async" [value]="film" (click)="filterFilm()">{{ film }}</mat-option>
+    </mat-autocomplete>
+</mat-form-field>
