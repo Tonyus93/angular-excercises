@@ -1,2 +1,11 @@
-<app-child-component valueFromParent="Value from Parent!" (valueFromChild)="changeText($event)"></app-child-component>
-<p>Value from Child: {{valueFromChild}}</p>
+<mat-card class="card">
+    <mat-card-content>
+        <app-child-component valueFromParent="Value from Parent!" (valueFromChild)="changeText($event)"></app-child-component>
+    </mat-card-content>
+</mat-card>
+<mat-card class="card">
+    <mat-card-content>
+        <p>Value from Child: {{valueFromChild}}</p>
+    </mat-card-content>
+</mat-card>
+

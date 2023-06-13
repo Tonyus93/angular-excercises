@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { ExerciseTwelveComponent } from './exercise-twelve.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ExerciseTwelveComponent } from './exercise-twelve.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    MatInputModule
   ]
 })
 export class ExerciseTwelveModule { }

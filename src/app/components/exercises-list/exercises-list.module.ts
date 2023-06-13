@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MatListModule } from '@angular/material/list';
 
 import { ExercisesListComponent } from './exercises-list.component';
 import { ExerciseTwoModule } from '../exercise-two/exercise-two.module';
@@ -21,6 +22,7 @@ import { ExerciseFourteenModule } from '../exercise-fourteen/exercise-fourteen.m
     ExercisesListComponent
   ],
   imports: [
+    MatListModule,
     RouterModule,
     ExerciseTwoModule,
     ExerciseThreeModule,

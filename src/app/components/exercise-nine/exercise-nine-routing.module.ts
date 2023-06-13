@@ -11,11 +11,11 @@ import { ExerciseNineSecondComponent } from './exercise-nine-second/exercise-nin
       useFactory: () => {
         if (Math.random() < 0.5) {
           return [
-            { path: 'exercise-9/result', component: ExerciseNineFirstComponent },
+            { path: 'exercise/9/result', component: ExerciseNineFirstComponent },
           ]
         } else {
           return [
-            { path: 'exercise-9/result', component: ExerciseNineSecondComponent },
+            { path: 'exercise/9/result', component: ExerciseNineSecondComponent },
           ]
         }
       },

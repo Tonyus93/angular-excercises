@@ -1,8 +1,8 @@
-<ul>
-    <li>
-        <p>This link is only allowed if user is logged in: <a [routerLink]="'/exercise-14/route-1'">Link</a></p>
-    </li>
-</ul>
+<mat-card>
+    <mat-card-content>
+        <p>This link is only allowed if user is logged in: <button mat-button [routerLink]="'/exercise-14/route-1'">Link</button></p>
+        <p>Current user status: {{ authService.isLoggedIn }}</p>
+    </mat-card-content>
+</mat-card>
 
-<p>Current user status: {{ authService.isLoggedIn }}</p>
-<button (click)="authService.toggleUserAuth()">Toggle User Auth State</button>
+<button mat-button (click)="authService.toggleUserAuth()">Toggle User Auth State</button>

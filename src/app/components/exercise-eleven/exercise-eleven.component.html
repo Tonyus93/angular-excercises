@@ -1,17 +1,26 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <div class="form-name">
-        <label for="name">Name: </label>
-        <input id="name" type="text" formControlName="name">
-    </div>
-    
-    <div class="form-age">
-        <label for="age">Age: </label>
-        <input id="age" type="text" formControlName="age">
-    </div>
+    <mat-form-field>
+        <mat-label>
+            Name
+        </mat-label>
+        <input matInput id="name" type="text" formControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Age
+        </mat-label>
+        <input matInput id="age" type="text" formControlName="age">
+    </mat-form-field>
 
-    <button type="submit" [disabled]="form.invalid">Submit</button>
+    <button mat-button type="submit" [disabled]="form.invalid">Submit</button>
 </form>
 
-<p>Result:</p>
-<p>Name: {{ nameValue }}</p>
-<p>Age: {{ ageValue }}</p>
+<mat-card>
+    <mat-card-header>
+        <p>Result:</p>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Name: {{ nameValue }}</p>
+        <p>Age: {{ ageValue }}</p>
+    </mat-card-content>
+</mat-card>

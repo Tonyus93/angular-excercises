@@ -1,2 +1,8 @@
-<p>Current value: {{ value }}</p>
-<input type="text" [(ngModel)]="value" />
+<mat-form-field>
+    <mat-label>Type text here...</mat-label>
+    <input matInput type="text" [(ngModel)]="value" />
+    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="clearValue()">
+        <mat-icon>close</mat-icon>
+    </button>
+    <mat-hint>Current value: {{ value }}</mat-hint>
+</mat-form-field>

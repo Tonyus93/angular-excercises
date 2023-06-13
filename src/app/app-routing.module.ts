@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { ContentComponent } from './components/content/content.component';
 import { ExercisesListComponent } from './components/exercises-list/exercises-list.component';
 import { ExerciseTwoComponent } from './components/exercise-two/exercise-two.component';
 import { ExerciseThreeComponent } from './components/exercise-three/exercise-three.component';
@@ -18,20 +19,24 @@ import { ExerciseFourteenComponent } from './components/exercise-fourteen/exerci
 
 
 const routes: Routes = [
-  { path: '', component: ExercisesListComponent },
-  { path: 'exercise-2', component: ExerciseTwoComponent },
-  { path: 'exercise-3', component: ExerciseThreeComponent },
-  { path: 'exercise-4', component: ExerciseFourComponent },
-  { path: 'exercise-5', component: ExerciseFiveComponent },
-  { path: 'exercise-6', component: ExerciseSixComponent },
-  { path: 'exercise-7', component: ExerciseSevenComponent },
-  { path: 'exercise-8', component: ExerciseEightComponent },
-  { path: 'exercise-9', component: ExerciseNineComponent },
-  { path: 'exercise-10', component: ExerciseTenComponent },
-  { path: 'exercise-11', component: ExerciseElevenComponent },
-  { path: 'exercise-12', component: ExerciseTwelveComponent },
-  { path: 'exercise-13', component: ExerciseThirteenComponent },
-  { path: 'exercise-14', component: ExerciseFourteenComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: ContentComponent },
+  { path: 'exercise-list', component: ExercisesListComponent },
+  { path: 'exercise', children: [
+    { path: '2', component: ExerciseTwoComponent },
+    { path: '3', component: ExerciseThreeComponent },
+    { path: '4', component: ExerciseFourComponent },
+    { path: '5', component: ExerciseFiveComponent },
+    { path: '6', component: ExerciseSixComponent },
+    { path: '7', component: ExerciseSevenComponent },
+    { path: '8', component: ExerciseEightComponent },
+    { path: '9', component: ExerciseNineComponent },
+    { path: '10', component: ExerciseTenComponent },
+    { path: '11', component: ExerciseElevenComponent },
+    { path: '12', component: ExerciseTwelveComponent },
+    { path: '13', component: ExerciseThirteenComponent },
+    { path: '14', component: ExerciseFourteenComponent },
+  ]},
 ];
 
 @NgModule({
