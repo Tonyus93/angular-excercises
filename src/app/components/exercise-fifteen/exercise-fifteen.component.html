@@ -1,0 +1,5 @@
+<mat-list>
+    <p mat-list-item *ngFor="let number of listObs$ | async, index as i">
+        Result of {{ initialList[i] }} * 2 is {{ number }}
+    </p>
+</mat-list>
