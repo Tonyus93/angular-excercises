@@ -16,6 +16,7 @@ import { ExerciseElevenModule } from '../exercise-eleven/exercise-eleven.module'
 import { ExerciseTwelveModule } from '../exercise-twelve/exercise-twelve.module';
 import { ExerciseThirteenModule } from '../exercise-thirteen/exercise-thirteen.module';
 import { ExerciseFourteenModule } from '../exercise-fourteen/exercise-fourteen.module';
+import { ExerciseFifteenModule } from '../exercise-fifteen/exercise-fifteen.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ExerciseFourteenModule } from '../exercise-fourteen/exercise-fourteen.m
     ExerciseElevenModule,
     ExerciseTwelveModule,
     ExerciseThirteenModule,
-    ExerciseFourteenModule
+    ExerciseFourteenModule,
+    ExerciseFifteenModule
   ],
 })
 export class ExercisesListModule { }
