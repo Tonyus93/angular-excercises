@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { DrawerService } from 'src/app/services/drawer.service';
 
 @NgModule({
   declarations: [
