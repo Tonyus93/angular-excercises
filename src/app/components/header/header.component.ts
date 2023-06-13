@@ -8,8 +8,5 @@ import { ScreenDetectorService } from 'src/app/services/screen-detector.service'
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent {
-
-  constructor(public screenDetectorService: ScreenDetectorService, public drawerService: DrawerService) {
-    
-  }
+  constructor(public screenDetectorService: ScreenDetectorService, public drawerService: DrawerService) {}
 }
