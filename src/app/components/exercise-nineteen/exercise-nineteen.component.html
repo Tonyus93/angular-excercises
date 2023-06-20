@@ -1,0 +1,11 @@
+<h2>Miyazaki's games typeahead</h2>
+<mat-form-field>
+    <input #input [matAutocomplete]="auto" matInput type="text" placeholder="Type a Miyazaki game..." />
+    <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let game of controllerService.gameListObs$ | async" [value]="game.name" (click)="controllerService.selectGame(game)">{{ game.name }}</mat-option>
+    </mat-autocomplete>
+</mat-form-field>
+
+<div *ngIf="controllerService.gameSelectedObs$ | async; let game">
+    <img [src]="game.imageUrl" />
+</div>
