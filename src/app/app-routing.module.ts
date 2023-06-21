@@ -22,6 +22,7 @@ import { ExerciseSeventeenComponent } from './components/exercise-seventeen/exer
 import { ExerciseNineteenComponent } from './components/exercise-nineteen/exercise-nineteen.component';
 import { ExerciseTwentyComponent } from './components/exercise-twenty/exercise-twenty.component';
 import { ExerciseTwentyoneComponent } from './components/exercise-twentyone/exercise-twentyone.component';
+import { ExerciseTwentytwoComponent } from './components/exercise-twentytwo/exercise-twentytwo.component';
 
 
 const routes: Routes = [
@@ -48,6 +49,7 @@ const routes: Routes = [
     { path: '19', component: ExerciseNineteenComponent },
     { path: '20', component: ExerciseTwentyComponent },
     { path: '21', component: ExerciseTwentyoneComponent },
+    { path: '22', component: ExerciseTwentytwoComponent },
   ]},
 ];
 
