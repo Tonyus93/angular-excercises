@@ -24,6 +24,7 @@ import { ExerciseTwentyComponent } from './components/exercise-twenty/exercise-t
 import { ExerciseTwentyoneComponent } from './components/exercise-twentyone/exercise-twentyone.component';
 import { ExerciseTwentytwoComponent } from './components/exercise-twentytwo/exercise-twentytwo.component';
 import { ExerciseTwentyfourComponent } from './components/exercise-twentyfour/exercise-twentyfour.component';
+import { ExerciseTwentyfiveComponent } from './components/exercise-twentyfive/exercise-twentyfive.component';
 
 
 const routes: Routes = [
@@ -52,6 +53,7 @@ const routes: Routes = [
     { path: '21', component: ExerciseTwentyoneComponent },
     { path: '22', component: ExerciseTwentytwoComponent },
     { path: '24', component: ExerciseTwentyfourComponent },
+    { path: '25', component: ExerciseTwentyfiveComponent },
   ]},
 ];
 
