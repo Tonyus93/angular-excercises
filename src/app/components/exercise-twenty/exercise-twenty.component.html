@@ -1,0 +1,15 @@
+<h2>combineLatest RxJS operator</h2>
+<p>When any observable emits a value, emit the last emitted value from each.</p>
+
+<button mat-button (click)="controllerService.runObservables()">Run</button>
+
+<div class="result-wrapper">
+    <p>First observable subscription:</p>
+    <p class="result">{{ controllerService.first$ | async }}</p>
+
+    <p>Second observable subscription:</p>
+    <p class="result">{{ controllerService.second$ | async }}</p>
+
+    <p>Combined observable subscription:</p>
+    <p class="result">{{ controllerService.combined$ | async }}</p>
+</div>
