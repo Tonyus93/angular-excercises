@@ -3,14 +3,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentModule } from './components/content/content.module';
 import { ExercisesListModule } from './components/exercises-list/exercises-list.module';
 import { HeaderModule } from './components/header/header.module';
-import { MatListModule } from '@angular/material/list';
 import { DrawerModule } from './components/drawer/drawer.module';
 
 @NgModule({
@@ -27,8 +26,7 @@ import { DrawerModule } from './components/drawer/drawer.module';
     MatDividerModule,
     HeaderModule,
     MatSidenavModule,
-    MatListModule,
-    DrawerModule
+    DrawerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
