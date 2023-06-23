@@ -24,34 +24,37 @@ import { ExerciseTwentytwoComponent } from '../exercise-twentytwo/exercise-twent
 import { ExerciseTwentyfourComponent } from '../exercise-twentyfour/exercise-twentyfour.component';
 import { ExerciseTwentyfiveComponent } from '../exercise-twentyfive/exercise-twentyfive.component';
 import { ExerciseTwentysixComponent } from '../exercise-twentysix/exercise-twentysix.component';
+import { ExerciseTwentyeightComponent } from '../exercise-twentyeight/exercise-twentyeight.component';
+import { ResultComponent } from '../exercise-twentyeight/result/result.component';
 
 const routes: Routes = [
 { path: 'exercise', children: [
-  { path: '2', component: ExerciseTwoComponent },
-  { path: '3', component: ExerciseThreeComponent },
-  { path: '4', component: ExerciseFourComponent },
-  { path: '5', component: ExerciseFiveComponent },
-  { path: '6', component: ExerciseSixComponent },
-  { path: '7', component: ExerciseSevenComponent },
-  { path: '8', component: ExerciseEightComponent },
-  { path: '9', component: ExerciseNineComponent },
-  { path: '10', component: ExerciseTenComponent },
-  { path: '11', component: ExerciseElevenComponent },
-  { path: '12', component: ExerciseTwelveComponent },
-  { path: '13', component: ExerciseThirteenComponent },
-  { path: '14', component: ExerciseFourteenComponent },
-  { path: '15', component: ExerciseFifteenComponent },
-  { path: '16', component: ExerciseSixteenComponent },
-  { path: '17', component: ExerciseSeventeenComponent },
-  { path: '19', component: ExerciseNineteenComponent },
-  { path: '20', component: ExerciseTwentyComponent },
-  { path: '21', component: ExerciseTwentyoneComponent },
-  { path: '22', component: ExerciseTwentytwoComponent },
-  { path: '24', component: ExerciseTwentyfourComponent },
-  { path: '25', component: ExerciseTwentyfiveComponent },
-  { path: '26', component: ExerciseTwentysixComponent },
+  { path: '2', component: ExerciseTwoComponent, pathMatch: 'full' },
+  { path: '3', component: ExerciseThreeComponent, pathMatch: 'full' },
+  { path: '4', component: ExerciseFourComponent, pathMatch: 'full' },
+  { path: '5', component: ExerciseFiveComponent, pathMatch: 'full' },
+  { path: '6', component: ExerciseSixComponent, pathMatch: 'full' },
+  { path: '7', component: ExerciseSevenComponent, pathMatch: 'full' },
+  { path: '8', component: ExerciseEightComponent, pathMatch: 'full' },
+  { path: '9', component: ExerciseNineComponent, pathMatch: 'full' },
+  { path: '10', component: ExerciseTenComponent, pathMatch: 'full' },
+  { path: '11', component: ExerciseElevenComponent, pathMatch: 'full' },
+  { path: '12', component: ExerciseTwelveComponent, pathMatch: 'full' },
+  { path: '13', component: ExerciseThirteenComponent, pathMatch: 'full' },
+  { path: '14', component: ExerciseFourteenComponent, pathMatch: 'full' },
+  { path: '15', component: ExerciseFifteenComponent, pathMatch: 'full' },
+  { path: '16', component: ExerciseSixteenComponent, pathMatch: 'full' },
+  { path: '17', component: ExerciseSeventeenComponent, pathMatch: 'full' },
+  { path: '19', component: ExerciseNineteenComponent, pathMatch: 'full' },
+  { path: '20', component: ExerciseTwentyComponent, pathMatch: 'full' },
+  { path: '21', component: ExerciseTwentyoneComponent, pathMatch: 'full' },
+  { path: '22', component: ExerciseTwentytwoComponent, pathMatch: 'full' },
+  { path: '24', component: ExerciseTwentyfourComponent, pathMatch: 'full' },
+  { path: '25', component: ExerciseTwentyfiveComponent, pathMatch: 'full' },
+  { path: '26', component: ExerciseTwentysixComponent, pathMatch: 'full' },
   { path: '27', loadChildren: () => import('../exercise-twentyseven/exercise-twentyseven.module')
     .then((m) => m.ExerciseTwentysevenModule) },
+  { path: '28', component: ExerciseTwentyeightComponent, pathMatch: 'full' },
   ]},
 ];
 
