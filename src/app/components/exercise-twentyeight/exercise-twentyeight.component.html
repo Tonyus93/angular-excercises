@@ -1,0 +1,16 @@
+<h2>Using NGRX.</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-label>
+            Name
+        </mat-label>
+        <input matInput formControlName="name" />
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Age
+        </mat-label>
+        <input matInput formControlName="age" />
+    </mat-form-field>
+    <button mat-button type="submit">Submit</button>
+</form>
